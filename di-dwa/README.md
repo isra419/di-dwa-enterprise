@@ -1,12 +1,59 @@
-# React + Vite
+# Working on the front-end 
+ # 🛒 Di Dwa Enterprise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Di Dwa Enterprise**, a sleek and user-friendly e-commerce platform for foodstuffs and groceries. Our goal is to bring the traditional provision shop experience online — fast, fresh, and accessible!
 
-Currently, two official plugins are available:
+![Di Dwa Banner](./src/assets/bg1.jpg) <!-- (optional - change path or remove if not using an image) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Di Dwa Enterprise** is a modern web application designed to let users:
+- Explore categories like fresh produce, grains, and meats
+- Search for products easily
+- Track and manage orders
+- Seamlessly navigate via mobile and desktop-friendly UI
+
+This project is built with collaboration and scalability in mind using modern frontend tools.
+
+---
+
+## 🧰 Tech Stack
+
+- ⚛️ **React.js** — JavaScript framework for building dynamic UIs
+- 💨 **Tailwind CSS** — Utility-first CSS for rapid styling
+- ✨ **ShadCN UI** — Prebuilt components for modern design
+- 🌀 **SwiperJS** — Responsive image sliders and carousels
+- 🎬 **Framer Motion** — Smooth animation handling
+
+---
+
+## 📸 Features
+
+- ✅ Responsive Navigation Bar
+- 🔍 Smart Search with category selector
+- 🎞️ Auto and manual image slider
+- 🧭 Drawer navigation on mobile but a website 
+- 🛒 Shopping cart icon with interactivity
+
+---
+
+## 👥 Team & Contributions
+
+This project is collaboratively built by a student team at [University of Ghana - Legon].  
+Current active contributors:
+- **Obeng Jessica Afriyie** (Frontend, UI/UX)
+- **Opoku Christ Nana** (Full-Stack)
+
+Want to contribute? Fork this repo, create a branch, and submit a Pull Request. 🎉
+
+---
+
+## 📦 Running the Project Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/isra419/di-dwa-enterprise.git
+
+ 
