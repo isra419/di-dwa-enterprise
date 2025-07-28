@@ -50,7 +50,7 @@ Want to contribute? Fork this repo, create a branch, and submit a Pull Request. 
 
 ---
 
-## 📦 Running the Project Locally
+## 📦 Running the Project Locally on your machine
 
 1. Clone the repository
 ```bash
