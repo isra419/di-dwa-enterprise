@@ -41,7 +41,8 @@ Welcome to the official repository for **Di Dwa**, an online foodstuffs and groc
 
 - **Jessica Obeng** – UI/UX Designer & Frontend Developer
 - **Israel Opoku-Agyemang** - Project Manager
-- **Mubarack Jibriel** - Development and Operations Manager 
+- **Mubarack Jibriel** - Development and Operations Manager
+- **Haruna Hakeem** - Database Administrator
 
 ---
 
