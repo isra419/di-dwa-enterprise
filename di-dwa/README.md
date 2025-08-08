@@ -44,6 +44,7 @@ This project is built with collaboration and scalability in mind using modern fr
 This project is collaboratively built by a student team at [University of Ghana - Legon].  
 Current active contributors:
 - **Obeng Jessica Afriyie** (Frontend, UI/UX)
+- **Israel Opoku** (Project Manager)
 - **Opoku Christ Nana** (Full-Stack)
 
 Want to contribute? Fork this repo, create a branch, and submit a Pull Request. 🎉
