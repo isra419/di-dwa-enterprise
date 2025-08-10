@@ -110,10 +110,9 @@ const MyOrder = () => {
 
   // Handle navigation back to home - you can customize this
   const handleBackToHome = () => {
-    // For demo purposes, just log. In your app, use proper navigation
     console.log('Navigating back to home...');
-    // In your actual app, use: navigate('/') or history.push('/') or window.location.href = '/'
-    window.history.back(); // Simple browser back navigation
+    // Team  use: navigate('/') or history.push('/') or window.location.href = '/'
+    window.history.back(); 
   };
 
   const handleImageError = (e) => {
