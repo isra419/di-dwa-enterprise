@@ -11,6 +11,7 @@ import AdminLoginPage from "./pages/Admin";
 import ContactUsPage from "./pages/ContactUs";
 import AboutPage from "./pages/About";
 import TrackOrderPage from "./pages/Track";
+import PaymentPage from "./pages/Payment";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function MainApp() {
   const location = useLocation();
 
   // Define routes that should NOT show the navbar and footer
-  const noLayoutRoutes = ["/login", "/SignUp", "/MyOrder", "/Admin","/ContactUs","/About", "/Track"];
+  const noLayoutRoutes = ["/login", "/SignUp", "/MyOrder", "/Admin","/ContactUs","/About", "/Track", "/Payment"];
   
   const shouldShowLayout = !noLayoutRoutes.includes(location.pathname);
 
@@ -47,6 +48,7 @@ function MainApp() {
           <Route path="/ContactUs" element={<ContactUsPage />} />
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Track" element={<TrackOrderPage />} />
+          <Route path="/Payment" element={<PaymentPage />} />
         </Routes>
       </main>
       
