@@ -46,6 +46,7 @@ Current active contributors:
 - **Obeng Jessica Afriyie** (Frontend, UI/UX)
 - **Israel Opoku** (Project Manager)
 - **Opoku Christ Nana** (Full-Stack)
+- **Haruna Hakeem** (Database Administrator)
 
 Want to contribute? Fork this repo, create a branch, and submit a Pull Request. 🎉
 
