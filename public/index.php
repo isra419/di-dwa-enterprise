@@ -4,3 +4,4 @@
     use App\DiDwaEnterprise\Application;
     $app = Application::getInstance();
     $app->run();
+    //Everything works smoothly, no errors
