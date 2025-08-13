@@ -19,6 +19,10 @@
                 $this->defaultController->landingPage();
             });
 
+            $router->get("/dashboard", function() {
+                $this->defaultController->dashboard();
+            });
+
             $this->dispatcher = new Dispatcher($router->getData());
         }
 

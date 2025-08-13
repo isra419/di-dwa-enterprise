@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Admin-Dashboard</span>
+        <button class="menu-btn" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav">
+        <a class="nav-item {{ activeMenu == 'dashboard' ? 'active' : '' }}" href="#">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-icon">🧾</span>
+          <span>Orders</span>
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-icon">👥</span>
+          <span>Customers</span>
+        </a>
+        <a class="nav-item {{ activeMenu == 'products' ? 'active' : '' }}" href="/dashboard">
+          <span class="nav-icon">🛒</span>
+          <span>products</span>
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-icon">🔌</span>
+          <span>Logout</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div class="search">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search products..." />
+        </div>
+        <div class="topbar-right">
+          <span class="welcome">Welcome, {{ adminName }}</span>
+          <span class="avatar" aria-hidden="true">🟢</span>
+          <button class="btn primary" id="btnAddProduct">Add Product</button>
+        </div>
+      </header>
+
+      <section class="products">
+        <div class="table">
+          <div class="row head">
+            <div class="col product">Product</div>
+            <div class="col price">Price</div>
+            <div class="col type">Type</div>
+            <div class="col discount">Discount</div>
+            <div class="col actions">Actions</div>
+          </div>
+
+          {% for p in products %}
+          <div class="row">
+            <div class="col product">
+              <div class="product-cell">
+                <div class="product-image" style="background-color: {{ p.imageColor }}"></div>
+                <div class="product-name">{{ p.name }}</div>
+              </div>
+            </div>
+            <div class="col price">{{ p.price }}</div>
+            <div class="col type">{{ p.type }}</div>
+            <div class="col discount">{{ p.discount ?? '' }}</div>
+            <div class="col actions">
+              <button class="btn outline">Edit</button>
+              <button class="btn danger">Delete</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="addProductModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Add Product</h3>
+        <button class="icon-btn" id="btnCloseModal" aria-label="Close">✖</button>
+      </div>
+      <div class="modal-body">
+        <form id="addProductForm" onsubmit="return false;">
+          <div class="field">
+            <label>Product Name</label>
+            <input type="text" placeholder="" />
+          </div>
+
+          <div class="field two">
+            <div>
+              <label>Category</label>
+              <div class="select">
+                <select>
+                  <option>Amount</option>
+                  <option>Quantity</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label>Price Range</label>
+              <div class="price-range">
+                <input type="number" placeholder="" />
+                <span class="dash">-</span>
+                <input type="number" placeholder="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="field two">
+            <div>
+              <label>Type</label>
+              <div class="select">
+                <select>
+                  <option>Amount</option>
+                  <option>Quantity</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label>Discount(optional)</label>
+              <div class="discount-input">
+                <input type="number" placeholder="" />
+                <span class="suffix">%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn" id="btnCancelModal" type="button">cancel</button>
+            <button class="btn success" type="submit">save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
