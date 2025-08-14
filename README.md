@@ -43,7 +43,7 @@ Welcome to the official repository for **Di Dwa**, an online foodstuffs and groc
 - **Israel Opoku-Agyemang** - Project Manager
 - **Mubarack Jibriel** - Development and Operations Manager
 - **Haruna Hakeem** - Database Administrator
-- **Emmanuel sarfo Attah-Nimoh-Backend Developer
+- **Emmanuel sarfo Attah-Nimoh** - Backend Developer
 ---
 
 ## 📝 How to Contribute
