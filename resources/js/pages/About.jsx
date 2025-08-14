@@ -7,7 +7,7 @@ import members from '../assets/members.jpg';
 import nana from '../assets/Nana.jpg';
 import team from '../assets/dwa.jpg';
 import father from '../assets/father.jpeg';
-import joy from '../assets/joy.jpg';
+import joy from '../assets/Joy.jpg';
 import market from '../assets/market.webp';
 
 const AboutPage = () => {
