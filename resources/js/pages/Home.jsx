@@ -16,7 +16,7 @@ import pineappleImg from "../assets/Pineapple.webp";
 import chickenImg from "../assets/Chicken.jpeg";
 import eggImg from "../assets/Eggs.webp";
 import fishImg from "../assets/fish.jpg";
-import beefImg from "../assets/beef.webp";
+import beefImg from "../assets/Beef.webp";
 import sardineImg from "../assets/Sardines.jpg";
 import oilImg from "../assets/Oil.webp";
 import saltImg from "../assets/salt.jpg";
