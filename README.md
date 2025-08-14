@@ -43,7 +43,7 @@ Welcome to the official repository for **Di Dwa**, an online foodstuffs and groc
 - **Israel Opoku-Agyemang** - Project Manager
 - **Mubarack Jibriel** - Development and Operations Manager
 - **Haruna Hakeem** - Database Administrator
-
+- **Emmanuel sarfo Attah-Nimoh-Backend Developer
 ---
 
 ## 📝 How to Contribute
@@ -79,3 +79,4 @@ For inquiries, suggestions, or support, please reach out via:
 - iopoku-agyemang001@st.ug.edu.gh - 0598441630
 - mubarackjibriel@gmail.com / mjibriel@st.ug.edu.gh -0542384885
 - hharuna012@st.ug.edu.gh / harunahakeem638@gmail.com - 0558707561
+- esattah-nimoh@st.ug.edu.gh -0594788056
