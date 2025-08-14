@@ -30,7 +30,7 @@ import bakingPowderImg from "../assets/Baking.webp";
 import groundnutImg from "../assets/Groundnut.jpg";
 
 // Trend Images
-import trend2Img from "../assets/joy.jpg";
+import trend2Img from "../assets/Joy.jpg";
 import trend3Img from "../assets/Nana.jpg";
 import trend4Img from "../assets/trends.jpeg";
 
