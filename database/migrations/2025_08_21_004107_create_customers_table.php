@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('customer_name');
             $table->string('password');
             $table->string('email')->unique();
-            $table->string('phone');
+            $table->string('phone')->unique();
             $table->string('location');
             $table->timestamps()->useCurrentOnUpdate();
         });
