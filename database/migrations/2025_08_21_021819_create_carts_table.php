@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor('customer_id');
-            $table->foreignIdFor('product_id');
-            $table->timestamps()->useCurrentOnUpdate();
+            $table->foreignIdFor(\App\Models\Customer::class);
+            $table->foreignIdFor(\App\Models\Product::class);
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate();
         });
     }
 
