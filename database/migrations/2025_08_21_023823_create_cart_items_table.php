@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('cart_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\App\Models\Cart::class);
-            $table->foreignIdFor(\App\Models\Customer::class);
+            $table->foreignIdFor(\App\Models\Cart::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(\App\Models\Customer::class)->constrained()->cascadeOnDelete();
             $table->integer('quantity');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrentOnUpdate();
