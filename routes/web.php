@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Product;
 use Inertia\Inertia;
+use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return Inertia::render('App', ["products" => Product::first()]);
-})->name('home');
+// Route::get('/', function () {
+//     return Inertia::render('App');
+// })->name('home');
 
 Route::get('/about', function() {
     return Inertia::render('About');
@@ -27,3 +27,5 @@ Route::get("/login", function() {
 Route::get("/order", function() {
     return Inertia::render('MyOrder');
 })->name('order');
+
+Route::resource('/', ProductController::class);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart, Heart, Star, TrendingUp, Grid, List, ChevronRight, Eye, Clock, MessageCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from '@inertiajs/react';
 
 // Product Images
 import lettuceImg from "../assets/lettuce.jpg";
@@ -325,7 +325,7 @@ function PromotionalSection() {
             <p className="text-gray-600 mb-6">
               Just Sign Up & Register it now to become member.
             </p>
-            <Link to="/SignUp">
+            <Link href="/SignUp">
             <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 w-full max-w-xs">
               SIGN UP NOW
             </button>

@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from '@inertiajs/react';
 import { FiShoppingCart, FiSearch, FiUser, FiMenu } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
@@ -199,7 +200,7 @@ const Navbar = () => {
               </motion.div>
             </div>
             
-            <Link to="/signup">
+            <Link href="/signup">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button className="bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all duration-200 shadow-md">
                   <FiUser className="w-4 h-4 mr-2" />
@@ -207,7 +208,7 @@ const Navbar = () => {
                 </Button>
               </motion.div>
             </Link>
-            <Link to="/login">
+            <Link href="/login">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button className="bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all duration-200 shadow-md">
                   LOGIN
@@ -248,12 +249,12 @@ const Navbar = () => {
                   ))}
                   
                   <div className="border-t pt-4 space-y-3">
-                    <Link to="/login" className="block">
+                    <Link href="/login" className="block">
                       <Button className="w-full bg-lime-600 hover:bg-lime-700 text-white">
                         LOGIN
                       </Button>
                     </Link>
-                    <Link to="/SignUp" className="block">
+                    <Link href="/SignUp" className="block">
                       <Button variant="outline" className="w-full border-lime-600 text-lime-600 hover:bg-lime-50">
                         SIGN UP
                       </Button>
@@ -283,7 +284,7 @@ const Navbar = () => {
             }`}
           >
             {item.name === "MY ORDER" ? (
-  <Link to="/order" className="flex items-center gap-2">
+  <Link href="/order" className="flex items-center gap-2">
     <span className="flex items-center gap-2">
       {item.name}
       <FiShoppingCart size={18} />

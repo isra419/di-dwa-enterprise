@@ -14,7 +14,8 @@ import TrackOrderPage from "@/pages/Track";
 import PaymentPage from "@/pages/Payment";
 import ForgotPasswordPage from "@/pages/ForgotPassword";
 
-function App() {
+function App({ products }) {
+  console.log(products)
   return (
     <Router>
       <MainApp />
