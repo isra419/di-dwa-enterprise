@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Product;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('App');
+    return Inertia::render('App', ["products" => Product::first()]);
 })->name('home');
 
 Route::get('/about', function() {
